@@ -1,0 +1,28 @@
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">&nbsp;</h1>
+                        <div class="i-love">
+                                I <i class="fa fa-heart" aria-hidden="true"></i>
+                            <div class="typed">
+                                Something
+                            </div>
+                        </div>
+                        <div class="intro-text">My name is <a href="#About" class="page-scroll">{{ site.author }}</a>. {{content | markdownify }}</div>
+                        <ul class="list-inline social-buttons">
+                            {% for network in page.social %}
+                            <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+                            {% endfor %}
+                        </ul>
+                        {% capture title %}
+                        {% assign pages = site.pages | sort: "order" %}
+                        {% for page in pages %}
+                        {% if forloop.first %}{{ page.title }}{% endif %}{% endfor %}{% endcapture %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

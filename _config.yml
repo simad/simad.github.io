@@ -1,0 +1,15 @@
+url: http://simad.github.io
+baseurl:
+
+# Site Settings
+title: Silvia Mandalà
+author: Silvia
+description: "Personal site"
+keywords: "jekyll, coding"
+google-tracking-id:
+
+# Career Settings
+# Default career thumbnail image.
+career-img: "img/timeline/start.png"
+
+exclude: ["Rakefile", "LICENSE", "readme.markdown"]

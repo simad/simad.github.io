@@ -1,0 +1,9 @@
+---
+layout: null
+title: Dec 2014 - Present
+subtitle: Software Engineer @ eBay
+image: "img/timeline/ebay.png"
+---
+Working as a full-stack software developer.  
+Mainly loving [Scala](http://www.scala-lang.org/) & [Swift](http://www.swift.org/), with a plethora of other languages & frameworks (Akka, Java, Spring, JavaScript, React.js) 
+

@@ -1,0 +1,7 @@
+---
+layout: null
+title: Jul 2014 - Nov 2014
+subtitle: Automation Engineer @ eBay
+image: "img/timeline/ebay.png"
+---
+Working on Mobile UI Automation with [ios-driver](https://ios-driver.github.io/ios-driver/) and [selendroid](http://selendroid.io/).

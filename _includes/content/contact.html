@@ -1,0 +1,31 @@
+<section id="{{ page.title }}" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <ul class="list-inline social-buttons">
+                {% for network in page.social %}
+                <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+                {% endfor %}
+            </ul>
+            {{ page.content | markdownify }}
+            <form action="https://smail.herokuapp.com/send" method="post">
+                <p id="awesome-form">
+                Hey Silvia! My name is <input type="text" name="name"/>, my email is <input type="text" name="email"/>
+                and I secretly am a <select>
+                <option value="unicorn">unicorn</option>
+                <option value="pirate">pirate</option>
+                <option value="robot">robot</option>
+                <option value="beer">beer</option>
+            </select>.
+                I wanted to tell you that <select>
+                <option value="awesome">you're awesome</option>
+                <option value="money">I want to give you some money</option>
+                <option value="hire">I want to hire you</option>
+                <option value="boo">I don't like sarcasm</option>
+            </select>. <br/><br/>
+                Oh, and also that: <textarea name="message" rows="6"></textarea> Thank you! </p>
+                <input type="hidden" name="subject" value="hey">
+                <input type="submit" class="btn btn-primary send-form" value="Send Message"/>
+            </form>
+        </div>
+    </div>
+</section>

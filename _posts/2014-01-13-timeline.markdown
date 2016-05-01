@@ -1,0 +1,6 @@
+---
+layout: null
+title: Jan 2014 - Jun 2014
+subtitle: Software Quality Engineering Intern @ eBay
+image: "img/timeline/ebay.png"
+---
