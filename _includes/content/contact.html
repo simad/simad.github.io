@@ -6,10 +6,11 @@
                 <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
                 {% endfor %}
             </ul>
+            <br/>
             {{ page.content | markdownify }}
             <form action="https://smail.herokuapp.com/send" method="post">
                 <p id="awesome-form">
-                Hey Silvia! My name is <input type="text" name="name"/>, my email is <input type="text" name="email"/>
+                My name is <input type="text" name="name"/>, my email is <input type="text" name="email"/>
                 and I secretly am a <select>
                 <option value="unicorn">unicorn</option>
                 <option value="pirate">pirate</option>
@@ -24,7 +25,7 @@
             </select>. <br/><br/>
                 Oh, and also that: <textarea name="message" rows="6"></textarea> Thank you! </p>
                 <input type="hidden" name="subject" value="hey">
-                <input type="submit" class="btn btn-primary send-form" value="Send Message"/>
+                <input type="submit" class="btn send-form" value="Send Message"/>
             </form>
         </div>
     </div>

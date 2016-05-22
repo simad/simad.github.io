@@ -1,0 +1,93 @@
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: $light;
+  background: rgba(255,78,81,1);
+  background: -moz-linear-gradient(left, $color5 0%, $color4 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $color5), color-stop(100%, $color4));
+  background: -webkit-linear-gradient(left, $color5 0%, $color4 100%);
+  background: -o-linear-gradient(left, $color5 0%, $color4 100%);
+  background: -ms-linear-gradient(left, $color5 0%, $color4 100%);
+  background: linear-gradient(to right, $color5 0%, $color4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4e51', endColorstr='#fc913a', GradientType=1 );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro a {
+  color: $color3;
+}
+
+.intro a:hover {
+  color: $dark;
+}
+.intro ul.social-buttons li a {
+  color: $color3;
+  background-color: $dark;
+}
+
+.intro  ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  color: $dark;
+  background-color: $color3;
+}
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+
+.intro .intro-body .intro-text, .intro-text p  {
+  font-size: 18px;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba($dark, 0.2);
+}
+.i-love .typed{
+  display:inline-block;
+}
+
+.i-love {
+  text-align: left;
+}
+
+.i-love .fa-heart {
+  color: red;
+}
+.i-love {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba($dark, 0.2);
+
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 6px;
+}
+@media(min-width:767px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+
+  .intro .intro-body .intro-text, .intro-text p {
+    font-size: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    text-shadow: 0px 1px 1px rgba($dark, 0.2);
+  }
+}
