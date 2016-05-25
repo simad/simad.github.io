@@ -99,6 +99,11 @@ a {
   transition: all .2s ease-in-out;
 }
 
+a.special-link {
+  background-color: transparent;
+  border:3px solid white;
+  box-shadow: 3px 3px 0 rgba($dark, 0.3);
+}
 a:hover,
 a:focus {
   text-decoration: none;

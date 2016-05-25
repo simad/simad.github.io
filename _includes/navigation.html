@@ -17,9 +17,12 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <li>
+                        <a class="special-link" href="/blog">Blog</a>
+                    </li>
                     {% assign pages = site.pages | sort: "order" %}
                     {% for page in pages %}
-                    {% unless page.title == "" || page.url == "/index.html" %}
+                    {% unless page.title == "" || page.url == "" %}
                     <li>
                         <a class="page-scroll" href="#{{ page.title }}">{{ page.title }}</a>
                     </li>
