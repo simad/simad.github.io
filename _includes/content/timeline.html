@@ -12,10 +12,10 @@
                 {% endcapture %}
 
                 <li class="{{ class }}">
-                    <div class="timeline-image">
+                    <div id="timeline-image" class="timeline-image animated">
                         <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.career-img}}{% endif %}" alt="">
                     </div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel animated">
                         <div class="timeline-heading">
                             {% if post.title %}<h5>{{ post.title }}</h5>{% endif %}
                             {% if post.subtitle %}<h4 class="subheading">{{ post.subtitle }}</h4>{% endif %}

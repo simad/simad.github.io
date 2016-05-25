@@ -11,7 +11,7 @@
                                 Something
                             </div>
                         </div>
-                        <div class="intro-text">My name is <a href="#About" class="page-scroll">{{ site.author }}</a>. {{content | markdownify }}</div>
+                        <div class="intro-text">{{content | markdownify }}</div>
                         <ul class="list-inline social-buttons">
                             {% for network in page.social %}
                             <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
