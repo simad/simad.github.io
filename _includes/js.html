@@ -27,3 +27,18 @@
 
     </script>
     {% endif %}
+
+    <script>
+      $(function(){
+        var likes = [];
+        {% for like in site.likes %}
+            likes.push('{{like}}')
+        {% endfor %}
+        $(".typed").typed({
+              strings: likes,
+            typeSpeed: 60,
+            loop: true,
+            backSpeed: 20
+      });
+      });
+    </script>

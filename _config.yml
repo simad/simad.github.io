@@ -12,4 +12,5 @@ google-tracking-id:
 # Default career thumbnail image.
 career-img: "img/timeline/start.png"
 
+likes: ["Coffee", "Photography", "Scala", "Guitars", "Craftsmanship", "Swift", "Food", "Testing", "Bouldering", "Sarcasm", "Party Parrots"]
 exclude: ["Rakefile", "LICENSE", "readme.markdown"]

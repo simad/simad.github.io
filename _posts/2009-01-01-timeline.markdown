@@ -3,3 +3,4 @@ layout: null
 title: Some time ago 
 image: "img/timeline/italy.png"
 ---
+Grew up in a small town in the smack middle of Italy. Sometimes there was cattle roaming around. I loved it.

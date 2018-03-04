@@ -13,7 +13,13 @@
 
                 <li class="{{ class }}">
                     <div id="timeline-image" class="timeline-image animated">
+                        {% if post.link %}
+                        <a href="{{ post.link }}" target="_blank">
+                            <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.career-img}}{% endif %}" alt="">
+                        </a>
+                        {% else %}
                         <img class="img-circle img-responsive" src="{{ site.baseurl }}/{% if post.image %}{{ post.image }}{% else %}{{site.career-img}}{% endif %}" alt="">
+                        {% endif %}
                     </div>
                     <div class="timeline-panel animated">
                         <div class="timeline-heading">

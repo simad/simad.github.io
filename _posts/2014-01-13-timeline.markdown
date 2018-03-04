@@ -3,4 +3,6 @@ layout: null
 title: Jan 2014 - Jun 2014
 subtitle: Software Quality Engineering Intern @ eBay
 image: "img/timeline/ebay.png"
+link: https://www.ebayinc.com/
 ---
+Couldn't have asked for a better first job. People make all the difference, and there were pretty awesome people, there.

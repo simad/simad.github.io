@@ -3,4 +3,6 @@ layout: null
 title: 2010
 subtitle: B.Sc in Computer Engineering @ University of Pisa
 image: "img/timeline/unipi.png"
+link: https://www.unipi.it/index.php/english
 ---
+Tried to figure out how technology can help older / less mobile / Alzheimer's-affected people.

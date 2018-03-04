@@ -20,6 +20,8 @@
               </div>
           </div>
       </section>
+    {% elsif page.section-type == "now" %}
+        {% include content/now.html %}
     {% elsif page.section-type == "timeline" %}
         {% include content/timeline.html %}
     {% elsif page.section-type == "contact" %}

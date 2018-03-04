@@ -1,0 +1,9 @@
+---
+layout: null
+title: April 2017 - July 2017
+subtitle: Lead Software Engineer @ Element 34
+image: "img/timeline/selenium.png"
+---
+Joined a 2-people startup, working on some cool tech revolving around [Selenium](https://www.seleniumhq.org/) Grid. It took me around 3 weeks to realise that the startup grind is not for me, right now.
+Worked mainly with [Angular.js](https://angular.io/) and [Java 8](https://www.java.com/), with lots of [Docker](https://www.docker.com/) sprinkled in the mix.
+

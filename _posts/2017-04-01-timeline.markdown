@@ -1,0 +1,10 @@
+---
+layout: null
+title: July 2016 - Present
+subtitle: Director @ Division By Zero
+image: "img/timeline/div0.png"
+link: https://divisionbyzero.co
+---
+Even though I love many things, I have quite little tolerance for _corporate bullsh*t_.
+I started my own company to improve my craft and hand pick the work I do.
+

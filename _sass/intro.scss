@@ -7,12 +7,12 @@
   text-align: center;
   color: $light;
   background: rgba(255,78,81,1);
-  background: -moz-linear-gradient(left, $color5 0%, $color4 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, $color5), color-stop(100%, $color4));
-  background: -webkit-linear-gradient(left, $color5 0%, $color4 100%);
-  background: -o-linear-gradient(left, $color5 0%, $color4 100%);
-  background: -ms-linear-gradient(left, $color5 0%, $color4 100%);
-  background: linear-gradient(to right, $color5 0%, $color4 100%);
+  background: -moz-linear-gradient(left, $accent 0%, $color5 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $accent), color-stop(100%, $color5));
+  background: -webkit-linear-gradient(left, $accent 0%, $color5 100%);
+  background: -o-linear-gradient(left, $accent 0%, $color5 100%);
+  background: -ms-linear-gradient(left, $accent 0%, $color5 100%);
+  background: linear-gradient(to right, $accent 0%, $color5 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4e51', endColorstr='#fc913a', GradientType=1 );
   -webkit-background-size: cover;
   -moz-background-size: cover;

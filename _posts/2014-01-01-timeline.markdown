@@ -4,3 +4,4 @@ title: Jan 2014
 subtitle: Moved to Zurich, Switzerland
 image: "img/timeline/switzerland.png"
 ---
+Moving abroad for the first time ever. Ah, little did I know.

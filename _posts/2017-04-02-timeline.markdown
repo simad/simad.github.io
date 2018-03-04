@@ -1,0 +1,12 @@
+---
+layout: null
+title: July 2016 - April 2017
+subtitle: Software Engineer @ Government Digital Service
+image: "img/timeline/GDS.png"
+link: https://www.gov.uk/government/organisations/government-digital-service
+---
+Building [GOV.UK Pay](https://www.payments.service.gov.uk/), to help British citizens pay for things using the mighty powers of the internets.
+Here's [cool post about it](https://gds.blog.gov.uk/2015/07/23/making-payments-more-convenient-and-efficient/).
+
+Fun fact, my picture ended up in this [post about recruiting](https://gds.blog.gov.uk/2017/03/02/in-tech-and-talented-the-governments-digital-transformation-needs-you/)
+

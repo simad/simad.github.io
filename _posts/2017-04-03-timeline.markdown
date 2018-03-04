@@ -1,0 +1,7 @@
+---
+layout: null
+title: Jan 2014
+subtitle: Moved (again) to Zurich, Switzerland
+image: "img/timeline/switzerland.png"
+---
+Taking a break from the City life. I planned to do much more hiking and eat a lot of cheese fondue.
