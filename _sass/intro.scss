@@ -18,48 +18,46 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-.intro a {
-  color: $color3;
+  a {
+    color: $color3;
+  }
+  a:hover {
+    color: $dark;
+  }
+  ul.social-buttons li a {
+    color: $color3;
+    background-color: $dark;
+  }
+  ul.social-buttons li a:hover,
+  ul.social-buttons li a:focus,
+  ul.social-buttons li a:active {
+    color: $dark;
+    background-color: $color3;
+  }
+
+  .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    .brand-heading {
+      font-size: 40px;
+    }
+    .intro-text, .intro-text p  {
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      text-align: left;
+      text-shadow: 0px 1px 1px rgba($dark, 0.3);
+    }
+  }
+  .avatar {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+    background: url('/img/silvia.jpg') center center no-repeat;
+    background-size: cover;
+  }
 }
 
-.intro a:hover {
-  color: $dark;
-}
-.intro ul.social-buttons li a {
-  color: $color3;
-  background-color: $dark;
-}
-
-.intro  ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-  color: $dark;
-  background-color: $color3;
-}
-.intro .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-
-.intro .intro-body .brand-heading {
-  font-size: 40px;
-}
-
-.intro .intro-body .intro-text, .intro-text p  {
-  font-size: 18px;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  text-align: left;
-  text-shadow: 0px 1px 1px rgba($dark, 0.3);
-}
-.i-love .typed{
-  display:inline-block;
-}
-
-.i-love .fa-heart {
-  color: red;
-}
 .i-love {
   text-align: left;
   margin: 0 0 35px;
@@ -70,6 +68,13 @@ ul.social-buttons li a:active {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 6px;
+
+  .fa-heart {
+    color: red;
+  }
+  .typed {
+    display:inline-block;
+  }
 }
 @media(min-width:767px) {
   .intro {
@@ -78,7 +83,7 @@ ul.social-buttons li a:active {
   }
 
   .intro .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 20px;
   }
 
   .i-love {
