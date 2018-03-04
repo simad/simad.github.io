@@ -3,6 +3,6 @@ layout: null
 title: 2013
 subtitle: M.Sc in Computer Engineering @ University of Pisa
 image: "img/timeline/unipi.png"
-link: https://www.unipi.it/index.php/english
+link: https://www.unipi.it/index.php/englishgia
 ---
 I hiked on a [glacier](https://80d2853cc4def76b377d-54344bc01a8b066c84096a8e7a3499ac.ssl.cf1.rackcdn.com/original/402673.jpg) to (quite literally) inject my code in an Automatic Weather Station up there. It was lots of fun. And cold.
