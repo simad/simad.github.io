@@ -4,6 +4,7 @@ baseurl:
 # Site Settings
 title: Silvia's Lair
 author: Silvia
+author_full: Silvia Mandalà
 description: "Personal site"
 keywords: "jekyll, coding"
 google-tracking-id:
