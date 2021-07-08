@@ -1,0 +1,38 @@
+/*! purgecss start ignore */
+@import 'nav.css';
+@import 'silvia.css';
+@import 'prismjs.css';
+@import 'tailwindcss/base';
+@import 'layout.css';
+@import 'tailwindcss/components';
+@import 'ffoxobliq.css';
+/*! purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+@variants responsive {
+    .text-shadow-primary-lg {
+        text-shadow: 6px 6px var(--primary);
+    }
+
+    .text-shadow-primary-md {
+        text-shadow: 5px 5px var(--primary);
+    }
+    
+    .text-shadow-primary {
+        text-shadow: 4px 4px var(--primary);
+    }
+
+    .text-shadow-secondary-lg {
+        text-shadow: 5px 5px var(--secondary);
+    }
+    
+    .text-shadow-secondary-md {
+        text-shadow: 4px 4px var(--secondary);
+    }
+
+    .text-shadow-secondary {
+        text-shadow: 3px 3px var(--secondary);
+    }
+   }
+
+  
