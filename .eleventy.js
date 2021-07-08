@@ -53,7 +53,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(svgContents)
 
   eleventyConfig.setQuietMode(true)
-
+  
+  eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
   eleventyConfig.addPassthroughCopy('./src/assets/js')
