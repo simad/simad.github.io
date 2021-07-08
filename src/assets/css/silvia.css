@@ -16,7 +16,7 @@ html {
   --secondary: var(--secondary-light);
   --shade: var(--shade-light);
   --background: var(--background-light);
-
+  font-family: 'Inter', sans-serif;
 	transition: all 1s ease; 
 }
 
@@ -49,6 +49,9 @@ html.dark {
     content: "";
   }
 
+h1 {
+
+}
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
