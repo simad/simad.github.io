@@ -1,5 +1,5 @@
 const { DateTime } = require('luxon')
-const htmlmin = require('html-minifier')
+const htmlmin = require('html-minifier-next')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 const svgContents = require("eleventy-plugin-svg-contents")
 const path = require ('path')
