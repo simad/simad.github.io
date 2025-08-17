@@ -1,0 +1,55 @@
+@import url("https://rsms.me/inter/inter.css");
+@import 'tailwindcss' source('../../src');
+@import './base.css' layer(base);
+@import './components.css' layer(components);
+@import './utilities.css' layer(utilities);
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@utility container {
+	margin-inline: auto;
+	padding-inline: 2rem;
+}
+
+@utility text-stroke-* {
+    -webkit-text-stroke-width: calc(--value(integer) * 1px);
+    -webkit-text-stroke-color: --value(--color-*);
+}
+
+@utility text-fill-* {
+    -webkit-text-fill-color: --value(--color-*);
+}
+
+@utility text-fill-transparent {
+    -webkit-text-fill-color: transparent;
+}
+
+@theme {
+    --color-primary: #ee4266;
+    --color-secondary: #3bceac;
+    --color-shade: #540d6e;
+    --color-background: #ffc533;
+    --text-notgiant: 6rem;
+    --text-lessgiant: 9rem;
+    --text-giant: 12rem;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer base {
+    .dark {
+        --color-primary: #ff3e7e;
+        --color-secondary: #14a7e1;
+        --color-shade: #ffc533;
+        --color-background: #2b154a;
+    }
+}

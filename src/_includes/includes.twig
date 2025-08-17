@@ -1,0 +1,14 @@
+{% if env.devMode %}
+  <script type="module" src="http://localhost:5173/@vite/client"></script>
+  <script type="module" src="http://localhost:5173/src/_scripts/_main.js"></script>
+  <link rel="stylesheet" href="http://localhost:5173/src/_styles/_main.css">
+  <link rel="icon" type="image/png" href="http://localhost:5173/src/_images/pizza-slice.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="http://localhost:5173/src/_images/pizza-slice.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="http://localhost:5173/src/_images/pizza-slice.png" sizes="96x96" />
+{% else %}
+  <link rel="stylesheet" href="/assets/_main.css">
+  <script src="/assets/_main.js" defer></script>
+  <link rel="icon" type="image/png" href="/assets/pizza-slice.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/assets/pizza-slice.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/pizza-slice.png" sizes="96x96" />
+{% endif %}

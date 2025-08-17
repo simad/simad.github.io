@@ -1,51 +1,47 @@
 {
-  "name": "eleventy_solo_starter_njk",
-  "description": "",
-  "private": true,
+  "name": "silvia.coffee",
+  "version": "1.0.0",
+  "description": "yet another dev website",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "clean": "rm -rf _site",
-    "hasher": "node csshash.js",
-    "start": "npm-run-all clean hasher --parallel dev:*",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --serve --quiet",
-    "dev:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
-    "build": "NODE_ENV=production npm-run-all clean hasher --parallel prod:*",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
+    "build": "NODE_ENV=production npm-run-all clean build:vite build:11ty",
+    "build:11ty": "eleventy --quiet",
+    "build:vite": "vite build",
+    "clean": "rm -rf dist",
+    "dev": "NODE_ENV=development npm-run-all -p dev:*",
+    "dev:11ty": "eleventy --quiet --serve",
+    "dev:vite": "vite",
     "build-ghpages": "npx @11ty/eleventy --pathprefix=/simad.github.io/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "browserslist": [
-    "last 4 versions",
-    "> 1%",
-    "maintained node versions"
-  ],
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-img": "^6.0.4",
-    "autoprefixer": "^10.4.21",
-    "eleventy-plugin-svg-contents": "^0.7.0",
-    "glob": "^11.0.3",
-    "glob-all": "^3.3.1",
-    "html-minifier-next": "^1.2.1",
-    "luxon": "^3.7.1",
-    "markdown-it": "^14.1.0",
-    "markdown-it-bracketed-spans": "^1.0.1",
-    "markdown-it-footnote": "^4.0.0",
-    "markdown-it-link-attributes": "^4.0.1",
-    "markdown-it-prism": "^3.0.0",
-    "md5": "^2.3.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "postcss-csso": "^6.0.1",
-    "postcss-import": "^16.1.1",
-    "postcss-nesting": "^13.0.2",
-    "rimraf": "^6.0.1",
-    "tailwindcss": "^4.1.12",
-    "tailwindcss-text-fill-stroke": "^2.0.0-beta.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simad/simad.github.io.git"
   },
+  "keywords": [
+    "tailwind",
+    "eleventy",
+    "alpine"
+  ],
+  "author": "Silvia Mandala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simad/simad.github.io/issues"
+  },
+  "homepage": "https://github.com/simad/simad.github.io#readme",
   "dependencies": {
-    "browser-sync": "^3.0.4"
+    "alpinejs": "^3.1.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@factorial/eleventy-plugin-twig": "^0.2.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.6",
+    "luxon": "^3.7.1",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.0.0",
+    "twig": "^1.15.4",
+    "vite": "^6.3.4"
   }
 }
