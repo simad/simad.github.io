@@ -4,6 +4,8 @@ dist
 build
 node_modules
 
+.idea/
+
 # Compiled source #
 ###################
 *.com

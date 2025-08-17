@@ -15,8 +15,6 @@ layout: base
     </article>
   </div>
 
-  {% if page.url !== "/about/" %}
-
   <div class="font-sans w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
     <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
   {% if nextPost.url %}
@@ -34,4 +32,3 @@ layout: base
     <p class="text-xs my-0 py-0 leading-tight">&nbsp;</p>
   {% endif %}
   </div>
-  {% endif %}

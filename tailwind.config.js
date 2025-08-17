@@ -34,10 +34,10 @@ module.exports = {
        '5xl': '3rem',
        '6xl': '4rem',
       '7xl': '5rem',
-      'lessgiant': '10rem',
-      'giant': '14rem',
       'notgiant': '6rem',
-     }, 
+      'lessgiant': '9rem',
+      'giant': '12rem',
+     },
     colors: {
       transparent: 'transparent',
       white: colors.white,
