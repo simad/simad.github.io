@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "NODE_ENV=production npm-run-all clean build:vite build:11ty",
+    "build": "NODE_ENV=production npm-run-all clean build:vite build:11ty debug:build",
+    "debug:build": "find dist -type f | sort",
     "build:11ty": "eleventy --quiet",
     "build:vite": "vite build",
     "clean": "rm -rf dist",
