@@ -11,8 +11,7 @@
     "clean": "rm -rf dist",
     "dev": "NODE_ENV=development npm-run-all -p dev:*",
     "dev:11ty": "eleventy --quiet --serve",
-    "dev:vite": "vite",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/simad.github.io/"
+    "dev:vite": "vite"
   },
   "repository": {
     "type": "git",
