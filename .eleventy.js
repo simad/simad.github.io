@@ -18,6 +18,7 @@ export default function (config) {
   config.addFilter('htmlDateString', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('MMMM d, yyyy')
   })
+  config.addPassthroughCopy("dist/assets");
   config.addPassthroughCopy({ 'public': './' })
   config.addPassthroughCopy("CNAME");
   config.addPlugin(twig, twigOptions)
