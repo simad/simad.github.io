@@ -11,11 +11,12 @@ function activateDarkMode() {
     localStorage.setItem("theme", "dark");
 }
 
-function activateAutoMode(darkMode) {
+function activateAutoMode() {
     const sunToggle = document.querySelector('#sun-toggle');
     const moonToggle = document.querySelector('#moon-toggle');
     const autoToggle = document.querySelector('#auto-toggle');
-    if (darkMode) document.querySelector('html').classList.add('dark')
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    if (isDark) document.querySelector('html').classList.add('dark')
     else document.querySelector('html').classList.remove('dark')
     autoToggle.classList.add('opacity-100');
     autoToggle.classList.remove('opacity-0');
@@ -44,17 +45,17 @@ function checkUserPreferences() {
         else activateLightMode()
         return
     }
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    activateAutoMode(isDark)
+    activateAutoMode()
 }
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     checkUserPreferences()
 });
 
 checkUserPreferences()
+
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
     const hasChosen = localStorage.getItem("theme");
     if (hasChosen === "dark") activateLightMode();
-    else if (hasChosen === "light") activateAutoMode(false);
+    else if (hasChosen === "light") activateAutoMode();
     else activateDarkMode()
 });
