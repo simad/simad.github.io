@@ -14,7 +14,7 @@ html {
   @apply h-6 w-6 md:h-10 md:w-10 cursor-pointer absolute right-5 top-5;
 }
 .svg-outline {
-  @apply text-fill-background text-stroke-2 text-stroke-shade;
+  @apply text-stroke-2 text-stroke-shade;
 }
 
 .box {

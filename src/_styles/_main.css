@@ -26,9 +26,9 @@
 }
 
 @theme {
-    --color-primary: #ee4266;
-    --color-secondary: #3bceac;
-    --color-shade: #540d6e;
+    --color-primary: #ff3e7e;
+    --color-secondary: #14a7e1;
+    --color-shade: #151013;
     --color-background: #ffc533;
     --text-notgiant: 6rem;
     --text-lessgiant: 9rem;
@@ -50,6 +50,6 @@
         --color-primary: #ff3e7e;
         --color-secondary: #14a7e1;
         --color-shade: #ffc533;
-        --color-background: #2b154a;
+        --color-background: #151013;
     }
 }
