@@ -26,10 +26,10 @@
 }
 
 @theme {
-    --color-primary: #ff3e7e;
-    --color-secondary: #14a7e1;
+    --color-primary: #FA5C5C;
+    --color-secondary: #FD8A6B;
     --color-shade: #151013;
-    --color-background: #ffc533;
+    --color-background: #FEC288;
     --text-notgiant: 6rem;
     --text-lessgiant: 9rem;
     --text-giant: 12rem;
@@ -47,9 +47,7 @@
 
 @layer base {
     .dark {
-        --color-primary: #ff3e7e;
-        --color-secondary: #14a7e1;
-        --color-shade: #ffc533;
+        --color-shade: #FEC288;
         --color-background: #151013;
     }
 }
