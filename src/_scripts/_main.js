@@ -2,36 +2,59 @@ import './alpine'
 
 function activateDarkMode() {
     document.querySelector('html').classList.add('dark')
+    document.querySelector('#auto-toggle').classList.add("opacity-0");
+    document.querySelector('#auto-toggle').classList.remove("opacity-100");
     document.querySelector('#sun-toggle').classList.add("opacity-100");
     document.querySelector('#sun-toggle').classList.remove("opacity-0");
     document.querySelector('#moon-toggle').classList.add("opacity-0");
     document.querySelector('#moon-toggle').classList.remove("opacity-100");
+    localStorage.setItem("theme", "dark");
+}
+
+function activateAutoMode(darkMode) {
+    const sunToggle = document.querySelector('#sun-toggle');
+    const moonToggle = document.querySelector('#moon-toggle');
+    const autoToggle = document.querySelector('#auto-toggle');
+    if (darkMode) document.querySelector('html').classList.add('dark')
+    else document.querySelector('html').classList.remove('dark')
+    autoToggle.classList.add('opacity-100');
+    autoToggle.classList.remove('opacity-0');
+    sunToggle.classList.add("opacity-0");
+    sunToggle.classList.remove("opacity-100");
+    moonToggle.classList.add("opacity-0");
+    moonToggle.classList.remove("opacity-100");
+    localStorage.removeItem("theme");
 }
 
 function activateLightMode() {
     document.querySelector('html').classList.remove('dark')
+    document.querySelector('#auto-toggle').classList.add("opacity-0");
+    document.querySelector('#auto-toggle').classList.remove("opacity-100");
+    document.querySelector('#sun-toggle').classList.add("opacity-0");
     document.querySelector('#sun-toggle').classList.remove("opacity-100");
     document.querySelector('#moon-toggle').classList.add("opacity-100");
     document.querySelector('#moon-toggle').classList.remove("opacity-0");
-    document.querySelector('#sun-toggle').classList.add("opacity-0");
-
+    localStorage.setItem("theme", "light");
 }
 
-function activateAutomaticMode() {
+function checkUserPreferences() {
+    const hasChosen = localStorage.getItem("theme");
+    if (hasChosen) {
+        if (hasChosen === "dark") activateDarkMode()
+        else activateLightMode()
+        return
+    }
     const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    if (isDark) activateDarkMode()
-    else activateLightMode()
+    activateAutoMode(isDark)
 }
-
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    activateAutomaticMode()
+    checkUserPreferences()
 });
 
-activateAutomaticMode()
+checkUserPreferences()
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-    if( document.querySelector('html').classList.contains("dark")) {
-        activateLightMode()
-    } else {
-        activateDarkMode()
-    }
+    const hasChosen = localStorage.getItem("theme");
+    if (hasChosen === "dark") activateLightMode();
+    else if (hasChosen === "light") activateAutoMode(false);
+    else activateDarkMode()
 });
