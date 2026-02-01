@@ -1,11 +1,12 @@
 ---
 layout: page
-title: "Now"
+title: "NOW"
 author: Silvia
-date: 2025-08-20T14:42
+date: 2026-02-01T12:50
 ---
 
-I still live in London, yearning to move to the countryside. I still struggle with wanting to be everywhere but here.
-I am about to take a few months break from work; meanwhile, I am building a game (about hacking... nerd) and having a blast.
+I am currently in Italy, about to move to sunny Malta. Well, that was not exactly what I had planned, but such is life sometimes.
 
-AI has not taken my job yet, but I am nevertheless ready for my full-time farmer/pirate (haven't decided yet) era.
+I have started a masters in Applied Neuroscience at King's College, and I am pretty stoked about it.
+
+AI has not taken my job yet, but I am nevertheless ready for my full-time farmer/pirate/scientist era.

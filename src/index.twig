@@ -6,33 +6,45 @@ title: 'About'
 
 {% block body %}
   <main>
-    <div class="container mx-auto text-center pt-10 2xl:text-center p-4 sm:p-8 lg:p-2">
+    <div class="container text-center pt-10 p-4 sm:p-8 lg:p-2">
+        <div class="flex md:flex-row flex-col justify-center w-full">
       <h1 class="uppercase font-black svg-outline transform">
         <div class="rotate-2 text-shadow-primary md:text-shadow-primary-md lg:text-shadow-primary-lg text-notgiant md:text-lessgiant lg:text-giant">Silvia</div>
         <div class="-rotate-3 -mt-8 md:-mt-12 lg:-mt-16 text-shadow-secondary md:text-shadow-secondary-md lg:text-shadow-secondary-lg text-5xl md:text-7xl lg:text-notgiant">Mandalá</div>
       </h1>
-      <p class="text-rad-shade mb-10 text-2xl md:text-3xl mt-10 leading-loose"
+            <p class="text-shade text-xl mt-6 md:text-2xl md:mt-0 leading-loose transform rotate-3 self-center"
+            >
+                <a class="box" href="/now">NOW</a></p>
+        </div>
+      <p class="text-rad-shade mt-6 mb-4 text-2xl md:text-3xl leading-loose"
       >Independent <strong>Coffee => Code Converter</strong>, currently at
         <a class="box" target="_blank" href="https://caisgroup.com">CAIS</a></p
       >
-      <p class="text-shade mb-10 text-2xl md:text-3xl mt-10 leading-loose transform rotate-3"
-      >
-        <a class="box" href="/now">NOW</a></p
-      >
-      <div class="flex flex-wrap justify-around mb-10 container mx-auto">
-        <p class="boxes transform rotate-1">🩷 Climbing</p>
-        <p class="boxes transform -rotate-3">I lift heavy things</p>
-        <p class="boxes transform rotate-1">ALL.THE.BOOKS!</p>
-        <p class="boxes transform -rotate-3">Owning too many musical instruments I can't actually play</p>
+        <p class="text-rad-shade mb-10 text-2xl md:text-3xl leading-loose"
+        >Trainee <strong>Neuroscientist</strong> at
+            <a class="box" target="_blank" href="https://www.kcl.ac.uk/">KCL</a></p
+        >
+      <div class="flex flex-wrap justify-around mb-2 container mx-auto">
+        <p class="boxes transform rotate-1">🩷 climbing & lifting heavy things</p>
+        <p class="boxes transform -rotate-3">READ.ALL.THE.BOOKS!</p>
+        <p class="boxes transform rotate-1">My first words were the Italian equivalent of "Go figure!"</p>
+        <p class="boxes transform -rotate-3">I own too many musical instruments I can't actually play</p>
         <p class="boxes transform rotate-1">I eat like a family of 5</p>
-        <p class="boxes transform -rotate-3">...sorry not sorry</p>
+        <p class="boxes transform -rotate-3">...sorry, not sorry</p>
         <p class="boxes transform rotate-1">As a child, I really wanted to be a secret agent</p>
-        <p class="boxes transform rotate-3">As an adult, I just want to be kind</p>
+        <p class="boxes transform -rotate-3">As an adult, I just want to be kind</p>
       </div>
       <div>
         <h2 class="text-shade text-3xl font-bold">Somewhere not here</h2>
         <ul class="links mb-20 transform -rotate-1 text-2xl">
-          <li class="inline"><a class="hover:underline" rel="me" href='mail&#116;&#111;&#58;%73%69%6&#67;&#37;2&#69;m&#37;61nda%6C&#97;%4&#48;gma%69%6&#67;&#46;&#99;om'>E-Mail</a></li>
+            <li class="inline"
+            ><a class="hover:underline" rel="me" target="_blank" href="https://debugginghumans.com"
+                >Debugging Humans</a
+                ></li>
+          <li class="inline"><a href="#"
+                                class="contact-link hover:underline after:content-['Mail']"
+                                onclick="window.location.href='mailto:' + 'hi' + '@' + 'silvia.coffee'; return false;">
+              </a></li>
           <li class="inline"
           ><a class="hover:underline" rel="me" target="_blank" href="https://www.linkedin.com/in/silviamandala"
             >LinkedIn</a

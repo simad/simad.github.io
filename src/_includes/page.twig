@@ -3,19 +3,18 @@
 {% block body %}
   <div class="text-center pt-12 lg:pt-20">
     <div>
-      <h1 class="text-3xl md:text-5xl 2xl:text-6xl font-bold">{{ title }}</h1>
+      <h1 class="text-3xl md:text-4xl 2xl:text-5xl font-extrabold antialiased"><a href="/">⬅</a> {{ title }}</h1>
       {% if subtitle %}
         <h2 class="mt-6 lg:mt-8 2xl:mt-12 text-2xl lg:text-4xl 2xl:text-5xl">{{ subtitle }}</h2>
       {% endif %}
       {% if description %}
         <p class="font-sans mt-8 lg:mt-12 2xl:mt-16 text-xl lg:text-2xl 2xl:text-3xl">{{ description }}</p>
       {% endif %}
-      <p class="font-sans mt-4 lg:mt-6 2xl:mt-8 text-2xl"><strong>{{ page.date|date }}</strong></p>
     </div>
   </div>
 
   <div class="text-2xl sm:w-5/6 md:w-4/5 xl:w-1/2 2xl:w-5/12 mt-10 mr-auto ml-auto px-6 lg:px-0">
-    <article class="article whitespace-pre-wrap">
+    <article class="article whitespace-pre-wrap box-page transform rotate-2 pt-10 px-10">{{ page.date|date("jS M Y") }}
       {{ content|raw }}
     </article>
   </div>
