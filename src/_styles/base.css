@@ -18,7 +18,7 @@ html {
 }
 
 .box {
-  @apply font-black ml-2 px-4 py-2 bg-shade text-background tracking-widest   hover:bg-primary ;
+  @apply font-black ml-2 px-4 py-2 bg-shade text-background tracking-widest   hover:bg-secondary;
 }
 .boxes {
   @apply px-4 py-2 bg-shade text-background font-black mb-8 mr-2 text-xl tracking-wide outline-2 outline-offset-2 outline-shade;
@@ -73,6 +73,10 @@ body {
 
 .text-shadow-primary-md {
   text-shadow: 7px 7px var(--color-primary);
+}
+
+.box-shadow-primary {
+    box-shadow: 4px 4px var(--color-primary);
 }
 
 .text-shadow-primary {
