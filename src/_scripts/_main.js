@@ -4,10 +4,10 @@ function activateDarkMode() {
     document.querySelector('html').classList.add('dark')
     document.querySelector('#auto-toggle').classList.add("opacity-0");
     document.querySelector('#auto-toggle').classList.remove("opacity-100");
-    document.querySelector('#sun-toggle').classList.add("opacity-100");
-    document.querySelector('#sun-toggle').classList.remove("opacity-0");
-    document.querySelector('#moon-toggle').classList.add("opacity-0");
-    document.querySelector('#moon-toggle').classList.remove("opacity-100");
+    document.querySelector('#sun-toggle').classList.add("opacity-0");
+    document.querySelector('#sun-toggle').classList.remove("opacity-100");
+    document.querySelector('#moon-toggle').classList.add("opacity-100");
+    document.querySelector('#moon-toggle').classList.remove("opacity-0");
     localStorage.setItem("theme", "dark");
 }
 
@@ -31,10 +31,10 @@ function activateLightMode() {
     document.querySelector('html').classList.remove('dark')
     document.querySelector('#auto-toggle').classList.add("opacity-0");
     document.querySelector('#auto-toggle').classList.remove("opacity-100");
-    document.querySelector('#sun-toggle').classList.add("opacity-0");
-    document.querySelector('#sun-toggle').classList.remove("opacity-100");
-    document.querySelector('#moon-toggle').classList.add("opacity-100");
-    document.querySelector('#moon-toggle').classList.remove("opacity-0");
+    document.querySelector('#sun-toggle').classList.add("opacity-100");
+    document.querySelector('#sun-toggle').classList.remove("opacity-0");
+    document.querySelector('#moon-toggle').classList.add("opacity-0");
+    document.querySelector('#moon-toggle').classList.remove("opacity-100");
     localStorage.setItem("theme", "light");
 }
 
