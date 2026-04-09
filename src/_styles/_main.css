@@ -1,5 +1,6 @@
 @import url("https://rsms.me/inter/inter.css");
 @import 'tailwindcss' source('../../src');
+@source "../../src/**/*.njk";
 @import './base.css' layer(base);
 @import './components.css' layer(components);
 @import './utilities.css' layer(utilities);
