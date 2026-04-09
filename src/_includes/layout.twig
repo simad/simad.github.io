@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Senior Software Engineer & Trainee Neuroscientist. Mapping the intersection of code, the human brain, and intentional living. ">
+    <meta name="description" content="Senior Software Engineer and trainee Applied Neuroscientist. Mapping the intersection of code, biology, and intentional living through projects like The Human Rebellion and Debugging Humans.">
     <meta property="og:title" content="Silvia Mandalà">
-    <meta property="og:description" content="Software Engineer & Trainee Neuroscientist. Mapping the intersection of code, the human brain, and intentional living.">
+    <meta property="og:description" content="Senior Software Engineer and trainee Applied Neuroscientist. Mapping the intersection of code, biology, and intentional living through projects like The Human Rebellion and Debugging Humans.">
     {% include 'includes.twig' %}
-    <title>{{ siteparams.siteTitle }} > {{ title }}</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Silvia Mandalá",
+            "jobTitle": "Senior Software Engineer",
+            "alumniOf": "King's College London",
+            "url": "https://silvia.coffee",
+            "sameAs": [
+                "https://thehumanrebellion.substack.com/",
+                "https://debugginghumans.com",
+                "https://www.linkedin.com/in/silviamandala"
+            ]
+        }
+    </script>
+    <title>{{ siteparams.siteTitle }} | {{ title }}</title>
 </head>
 
 <body class="{{ env.devMode ? 'debug-screens' }}">
