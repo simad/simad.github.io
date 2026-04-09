@@ -1,4 +1,4 @@
-{% extends 'layout.twig' %}
+{% extends 'layout.njk' %}
 
 {% block body %}
   <div class="text-center pt-12 lg:pt-20">
@@ -14,8 +14,8 @@
   </div>
 
   <div class="text-2xl sm:w-5/6 md:w-4/5 xl:w-1/2 2xl:w-5/12 mt-10 mr-auto ml-auto px-6 lg:px-0">
-    <article class="article whitespace-pre-wrap box-page transform rotate-2 pt-10 px-10"><strong>{{ page.date|date("jS M Y") }}</strong>
-      {{ content|raw }}
+    <article class="article whitespace-pre-wrap box-page transform rotate-2 pt-10 px-10"><strong>{{ page.date|htmlDateString }}</strong>
+      {{ content|safe }}
     </article>
   </div>
 {% endblock %}

@@ -1,18 +1,4 @@
-import twig from '@factorial/eleventy-plugin-twig'
 import {DateTime} from "luxon";
-
-
-const twigOptions = {
-  twig: {
-    namespaces: {},
-  },
-  images: {},
-  dir: {
-    input: "src",
-    output: "dist",
-    watch: "src/**/*.{css,js,twig,png,jpg,jpeg,gif,svg,webp}",
-  },
-};
 
 export default function (config) {
   config.addFilter('htmlDateString', dateObj => {
@@ -20,7 +6,9 @@ export default function (config) {
   })
   config.addPassthroughCopy({ 'public': './' })
   config.addPassthroughCopy("CNAME");
-  config.addPlugin(twig, twigOptions)
+  config.setNunjucksEnvironmentOptions({
+    throwOnUndefined: true,
+  });
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
     open: true,
@@ -30,6 +18,8 @@ export default function (config) {
       input: 'src',
       output: 'dist',
     },
-    markdownTemplateEngine: 'twig',
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
   }
 }
