@@ -94,3 +94,7 @@ body {
 .text-shadow-secondary {
   text-shadow: 4px 4px var(--color-secondary);
 }
+
+ul {
+    list-style-type: disc;
+}
