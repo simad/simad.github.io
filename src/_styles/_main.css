@@ -9,8 +9,8 @@
 @plugin '@tailwindcss/typography';
 
 @utility container {
-	margin-inline: auto;
-	padding-inline: 2rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
 }
 
 @utility text-stroke-* {
@@ -37,15 +37,34 @@
 }
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
 }
 
+::selection {
+    background: var(--color-secondary);
+    color: var(--color-shade);
+}
+::-moz-selection {
+    background: var(--color-secondary);
+    color: var(--color-shade);
+}
+
+.dark {
+    ::selection {
+        background: rgb(253 138 107 / 0.8);
+        color: var(--color-background);
+    }
+    ::-moz-selection {
+        background: rgb(253 138 107 / 0.8);
+        color: var(--color-background);
+    }
+}
 @layer base {
     .dark {
         --color-shade: #FEC288;

@@ -68,11 +68,11 @@ body {
 }
 
 .text-shadow-primary-lg {
-  text-shadow: 8px 8px var(--color-primary);
+  text-shadow: 11px 11px var(--color-primary);
 }
 
 .text-shadow-primary-md {
-  text-shadow: 7px 7px var(--color-primary);
+  text-shadow: 9px 9px var(--color-primary);
 }
 
 .box-shadow-primary {
@@ -80,19 +80,19 @@ body {
 }
 
 .text-shadow-primary {
-  text-shadow: 4px 4px var(--color-primary);
+  text-shadow: 11px 11px var(--color-primary);
 }
 
 .text-shadow-secondary-lg {
-  text-shadow: 8px 8px var(--color-secondary);
+  text-shadow: 11px 11px var(--color-secondary);
 }
 
 .text-shadow-secondary-md {
-  text-shadow: 7px 7px var(--color-secondary);
+  text-shadow: 9px 9px var(--color-secondary);
 }
 
 .text-shadow-secondary {
-  text-shadow: 4px 4px var(--color-secondary);
+  text-shadow: 11px 11px var(--color-secondary);
 }
 
 ul {

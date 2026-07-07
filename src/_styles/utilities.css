@@ -1,1 +1,43 @@
 /* Custom Utilities Go Here. */
+
+/* Sticker delight: slap-down entrance, name wobble on hover, drifting contours. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes slap-down {
+    0%   { opacity: 0; scale: 1.6; }
+    70%  { opacity: 1; scale: 0.96; }
+    100% { opacity: 1; scale: 1; }
+  }
+
+  h1.svg-outline {
+    animation: slap-down 0.45s ease-out backwards;
+  }
+
+  .boxes {
+    animation: slap-down 0.35s ease-out backwards;
+  }
+  .boxes:nth-child(1) { animation-delay: 0.45s; }
+  .boxes:nth-child(2) { animation-delay: 0.53s; }
+  .boxes:nth-child(3) { animation-delay: 0.61s; }
+  .boxes:nth-child(4) { animation-delay: 0.69s; }
+  .boxes:nth-child(5) { animation-delay: 0.77s; }
+  .boxes:nth-child(6) { animation-delay: 0.85s; }
+  .boxes:nth-child(7) { animation-delay: 0.93s; }
+  .boxes:nth-child(8) { animation-delay: 1.01s; }
+
+  @media (hover: hover) {
+    /* Nudged sticker: the two name lines jiggle opposite ways.
+       Animates transform so it composes with the Tailwind rotate-* tilt. */
+    @keyframes wobble {
+      0%, 100% { transform: rotate(0deg); }
+      25%      { transform: rotate(1.5deg); }
+      55%      { transform: rotate(-1.2deg); }
+      80%      { transform: rotate(0.5deg); }
+    }
+    h1.svg-outline:hover > div:first-child {
+      animation: wobble 0.5s ease-in-out;
+    }
+    h1.svg-outline:hover > div:last-child {
+      animation: wobble 0.5s ease-in-out reverse;
+    }
+  }
+}
