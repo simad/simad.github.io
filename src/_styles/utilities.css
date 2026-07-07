@@ -24,6 +24,41 @@
   .boxes:nth-child(7) { animation-delay: 0.93s; }
   .boxes:nth-child(8) { animation-delay: 1.01s; }
 
+  /* Angry-birds fling: hover knocks a sticker toward mid-page and off the bottom.
+     --dx/--spin are set per-sticker in _main.js; animates transform so it
+     composes with the Tailwind rotate-* tilt. */
+  /* Per-keyframe easing: decelerate up to the apex, accelerate down = smooth parabola.
+     A single ease-in would reset velocity at the 20% frame and visibly hitch. */
+  @keyframes fling-off {
+    0%   { transform: translate(0, 0) rotate(0deg); opacity: 1; animation-timing-function: ease-out; }
+    20%  { transform: translate(calc(var(--dx) * 0.3), -2.5rem) rotate(calc(var(--spin) * 0.2)); animation-timing-function: ease-in; }
+    85%  { opacity: 1; }
+    100% { transform: translate(var(--dx), 120vh) rotate(var(--spin)); opacity: 0; }
+  }
+  .boxes.flung {
+    animation: fling-off 1s forwards;
+    pointer-events: none;
+    will-change: transform, opacity;
+  }
+
+  /* Easter egg: when every sticker has been flung, "ok then." fades in after an
+     awkward beat (injected by _main.js). The 1.4s delay of nothing IS the joke. */
+  .ok-then {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    rotate: -1deg;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color-shade);
+    opacity: 0;
+    animation: awkward-fade 1.2s ease 1.4s forwards;
+  }
+  @keyframes awkward-fade {
+    to { opacity: 1; }
+  }
+
   @media (hover: hover) {
     /* Nudged sticker: the two name lines jiggle opposite ways.
        Animates transform so it composes with the Tailwind rotate-* tilt. */

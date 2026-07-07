@@ -59,3 +59,32 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
     else if (hasChosen === "light") activateAutoMode();
     else activateDarkMode()
 });
+
+// Angry-birds fling: hover knocks a sticker toward mid-page and off the bottom.
+// CSS :hover can't drive this (the box leaves the cursor and the animation
+// would snap back), so JS sets the flight path and hides it on landing.
+const flingArmedAt = performance.now() + 1800; // let the entrance finish; also stops a parked cursor flinging a sticker on load
+const stickers = [...document.querySelectorAll('.boxes')];
+let fallen = 0;
+stickers.forEach(box => {
+    box.addEventListener('mouseenter', () => {
+        if (box.classList.contains('flung') || performance.now() < flingArmedAt) return;
+        const r = box.getBoundingClientRect();
+        const dx = window.innerWidth / 2 - (r.left + r.width / 2);
+        box.style.setProperty('--dx', `${Math.round(dx)}px`);
+        box.style.setProperty('--spin', dx > 0 ? '540deg' : '-540deg');
+        box.classList.add('flung');
+    });
+    box.addEventListener('animationend', e => {
+        if (e.animationName !== 'fling-off') return;
+        box.style.visibility = 'hidden';
+        if (++fallen === stickers.length) {
+            const container = box.parentElement;
+            container.style.position = 'relative';
+            const okThen = document.createElement('p');
+            okThen.className = 'ok-then';
+            okThen.textContent = 'ok then.';
+            container.appendChild(okThen);
+        }
+    });
+});
