@@ -63,7 +63,7 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
 // Angry-birds fling: hover knocks a sticker toward mid-page and off the bottom.
 // CSS :hover can't drive this (the box leaves the cursor and the animation
 // would snap back), so JS sets the flight path and hides it on landing.
-const flingArmedAt = performance.now() + 1800; // let the entrance finish; also stops a parked cursor flinging a sticker on load
+const flingArmedAt = performance.now() + 1400; // last sticker enters at ~1.36s; also stops a parked cursor flinging a sticker on load
 const stickers = [...document.querySelectorAll('.boxes')];
 let fallen = 0;
 stickers.forEach(box => {
